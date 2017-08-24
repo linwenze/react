@@ -1,0 +1,1 @@
+window.MyVal = 33;
