@@ -32,4 +32,4 @@ localhost:8080
 
 **移动端页面:**
 
-![移动端端页面](https://raw.githubusercontent.com/linwenze/image/master/react/react1.png)(https://raw.githubusercontent.com/linwenze/image/master/react/react2.png)
+![移动端端页面](https://raw.githubusercontent.com/linwenze/image/master/react/react1.png)![移动端端页面](https://raw.githubusercontent.com/linwenze/image/master/react/react2.png)
