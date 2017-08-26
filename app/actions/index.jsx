@@ -1,3 +1,4 @@
+
 /*
  * @author tanjizhen 2016-12-10
  * @version 1.0.0
@@ -13,16 +14,14 @@ export const RECEIVE_POSTS = 'RECEIVE_POSTS'
  * @method  addTodo添加新事项
  * @param  {String} text 添加事项的内容
  */
-// export const setStr = (str) => {
+export const setStr = (str) => {
 
-//     return (dispatch, getState) => {
-//        alert(44)
-//         return {
-//         type: MYSTR,
-//         str,
-//     };
-//     };
-// };
+    
+        return {
+        type: MYSTR,
+        str,
+    };
+};
 export function fetchPosts(subreddit,parma) {
 
   // Thunk middleware 知道如何处理函数。
@@ -65,13 +64,12 @@ export function receivePosts(subreddit, json) {
     receivedAt: Date.now()
   }
 }
-export function setStr(str) {
-
-    return {
-        type: MYSTR,
-        str,
-    };
-}
+// export function setStr(str) {
+//     return {
+//         type: MYSTR,
+//         str,
+//     };
+// }
 // export function setNum(str) {
 
 //     return {

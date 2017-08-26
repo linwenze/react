@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import HomeTmp from '../../components/HomeTmp'
 import ReactDOM from 'react-dom'; 
+import { Button } from 'antd-mobile';
 import {
   BrowserRouter as Router,
   Route,
@@ -26,15 +27,14 @@ class Home extends Component {
     
     render() {
 
-        const { dispatch, myApp,fetchPosts } = this.props;
+        const { dispatch, setStr,myApp,fetchPosts } = this.props;
         return (
             <div className='box'>
                 <HomeTmp press={(subreddit,parma) => fetchPosts(subreddit,parma)}/>
-                {myApp.msg}sdsdsd
-                <Link
-               to="/about"
-         
-            >sfdsfd</Link>
+
+               
+            <Button className="btn" type="primary" onClick={()=>setStr()}>设置随机数字</Button>
+            随机数字:{myApp.str}
             </div>
         );
     }
@@ -47,6 +47,10 @@ const mapDispatchToProps=(dispatch)=>{
     return {
         fetchPosts: (subreddit,parma) => {
             dispatch(fetchPosts(subreddit,parma));
+        },
+        setStr: (subreddit,parma) => {
+            var str=Math.random()
+            dispatch(setStr(str));
         },
     }; 
 }

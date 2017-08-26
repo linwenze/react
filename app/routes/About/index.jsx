@@ -17,7 +17,7 @@ const Topics = ({ routes,match }) => {
     <h2>Topics</h2>
     <ul>
       <li>
-        <Link to="/AboutDetail/112233">sdfsfdsfdsfd</Link>
+        <Link to="/AboutDetail/112233">进入路由icon子页面</Link>
       </li>
       
     </ul>

@@ -11,10 +11,8 @@ const myApp = (state = {}, action) => {
 
     switch (action.type) {
        case RECEIVE_POSTS:
-      
         return action.posts
         case MYSTR:
-   
          str=action.str;
 
        console.log(action)

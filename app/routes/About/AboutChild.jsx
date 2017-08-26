@@ -16,7 +16,7 @@ class ChildPage extends React.Component{
 	render() {
 		return (
 			<div className='main'>
-				<div className='test'>ChildPage1</div>
+				<div className='test'>id:{this.props.match.params.id}</div>
 				<Button className="btn" icon="check-circle-o">with icon</Button>
 				<Demo/>
 	    	</div>

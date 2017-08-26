@@ -22,7 +22,7 @@ const PlaceHolder = props => (
 const Antd = () => (
   <div className="flex-container box">
   <Link to="/About">
-          Rendering with React
+           点击进入路由详情
         </Link>
     <div className="sub-title">基本</div>
     <Flex>
