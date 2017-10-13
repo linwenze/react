@@ -2,7 +2,7 @@
 
 > 技术架构：案例react+react-router-dom+react-redux+less+ES6+antds-mobile+webpack实现;
 
-
+说明
 ### 功能说明
 
 - 使用antds-mobile ui框架,屏宽以750px设计利用postCSS处理等比收缩
